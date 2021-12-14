@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../font/Pretendard-Regular.eot");
+  /* IE9 Compat Modes */
+  src: local(※), url("../font/Pretendard-Regular.eot?#iefix") format("embedded-opentype"), url("../font/Pretendard-Regular.woff2") format("woff2"), url("../font/Pretendard-Regular.woff") format("woff"), url("../font/Pretendard-Regular.ttf") format("truetype"), url("../font/Pretendard-Regular.svg#Pretendard") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-display: swap;
+  src: url("../font/Pretendard-SemiBold.eot");
+  /* IE9 Compat Modes */
+  src: local(※), url("../font/Pretendard-SemiBold.eot?#iefix") format("embedded-opentype"), url("../font/Pretendard-SemiBold.woff2") format("woff2"), url("../font/Pretendard-SemiBold.woff") format("woff"), url("../font/Pretendard-SemiBold.ttf") format("truetype"), url("../font/Pretendard-SemiBold.svg#Pretendard") format("svg");
+  /* Legacy iOS */
+}
+
+/*# sourceMappingURL=font.css.map */

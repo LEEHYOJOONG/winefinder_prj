@@ -1,0 +1,67 @@
+input[type=radio] {
+  position: absolute;
+  left: -9999px;
+}
+input[type=radio] + label {
+  display: inline-block;
+  position: relative;
+  padding: 6px 10px 6px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+input[type=radio] + label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: -9px 0 0;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/icon/ic-radio-off.png");
+  background-image: url("../img/icon/ic-radio-off@2x.png"), none;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+input[type=radio]:checked + label:before {
+  background-image: url("../img/icon/ic-radio-on.png");
+  background-image: url("../img/icon/ic-radio-on@2x.png"), none;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  left: -9999px;
+}
+input[type=checkbox] + label {
+  display: inline-block;
+  position: relative;
+  padding: 6px 10px 6px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+input[type=checkbox] + label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: -9px 0 0;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/icon/ic-checkbox-off.png");
+  background-image: url("../img/icon/ic-checkbox-off@2x.png"), none;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+input[type=checkbox]:checked + label:before {
+  background-image: url("../img/icon/ic-checkbox-on.png");
+  background-image: url("../img/icon/ic-checkbox-on@2x.png"), none;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=form.css.map */

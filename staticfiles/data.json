@@ -1,0 +1,92 @@
+{
+	"lists": [
+		{
+			"id": 1,
+			"name": "Conte di Campiano",
+			"title": "Primitivo di Manduria 2015",
+			"thumb": "./img/bottle/wine-01@2x.png",
+			"detail": "./img/bottle/detail@2x.png",
+			"grade": 4.3,
+			"ratings": 10219,
+			"percent": 65,
+			"flag": {
+				"icon": "italy",
+				"text": "Sicily, Italy"
+			},
+			"tags": [
+				{ "icon": "italy", "text": "Italy" },
+				{ "text": "Brunello di Montalcino" },
+				{ "text": "Banfi" },
+				{ "text": "Red wine" },
+				{ "text": "Sangiovese" }
+			],
+			"range": [0, 65, 65, 100]
+		},
+		{
+			"id": 2,
+			"name": "Banfi",
+			"title": "Brunello di Montalcino 2013",
+			"thumb": "./img/bottle/wine-02@2x.png",
+			"detail": "./img/bottle/detail@2x.png",
+			"grade": 4.2,
+			"ratings": 5887,
+			"percent": 65,
+			"flag": {
+				"icon": "italy",
+				"text": "Brunello di Montalcino, Italy"
+			},
+			"tags": [
+				{ "icon": "italy", "text": "Italy" },
+				{ "text": "Brunello di Montalcino" },
+				{ "text": "Banfi" },
+				{ "text": "Red wine" },
+				{ "text": "Sangiovese" }
+			],
+			"range": [0, 65, 65, 100]
+		},
+		{
+			"id": 3,
+			"name": "Masseria La Volpe",
+			"title": "1 Uno Primitivo di Manduria 2018",
+			"thumb": "./img/bottle/wine-03@2x.png",
+			"detail": "./img/bottle/detail@2x.png",
+			"grade": 4.2,
+			"ratings": 5887,
+			"percent": 65,
+			"flag": {
+				"icon": "italy",
+				"text": "Primitivo di Manduria, Italy"
+			},
+			"tags": [
+				{ "icon": "italy", "text": "Italy" },
+				{ "text": "Brunello di Montalcino" },
+				{ "text": "Banfi" },
+				{ "text": "Red wine" },
+				{ "text": "Sangiovese" }
+			],
+			"range": [0, 65, 65, 100]
+		},
+		{
+			"id": 4,
+			"name": "The Hess Collection",
+			"title": "Allomi Cabernet Sauvignon 2017",
+			"thumb": "./img/bottle/wine-04@2x.png",
+			"detail": "./img/bottle/detail@2x.png",
+			"grade": 4.2,
+			"ratings": 4718,
+			"percent": 65,
+			"flag": {
+				"icon": "usa",
+				"text": "Napa Valley, United States"
+			},
+			"tags": [
+				{ "icon": "usa", "text": "USA" },
+				{ "text": "Brunello di Montalcino" },
+				{ "text": "Banfi" },
+				{ "text": "Red wine" },
+				{ "text": "Sangiovese" }
+			],
+			"range": [0, 65, 65, 100]
+		}
+	]
+}

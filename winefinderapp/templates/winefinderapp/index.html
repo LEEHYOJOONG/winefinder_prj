@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+    <div class="root">
+      <div class="header"></div>
+      <div class="container">
+         <div class="home-section home-section--search">
+            <div class="home-logo"></div>
+            <div class="home-search">
+               <form action="" name="search">
+                  <button class="home-search__btn">검색</button>
+                  <input class="home-search__input" type="text" placeholder="와인명을 입력해주세요" id="search_name">
+               </form>
+            </div>
+            <div class="home-filter">
+               <form action="" name="filter">
+                  <div class="home-filter__title">당신의 와인 취향을 알려주세요</div>
+                  <div class="home-filter__slider">
+                     <div class="w-slider">
+                        <div class="w-slider__item">
+                           <div class="w-slider__txt">Light</div>
+                           <div class="w-slider__bar" id="slider1"></div>
+                           <div class="w-slider__txt">Bold</div>
+                        </div>
+                        <div class="w-slider__item">
+                           <div class="w-slider__txt">Smooth</div>
+                           <div class="w-slider__bar" id="slider2"></div>
+                           <div class="w-slider__txt">Tannic</div>
+                        </div>
+                        <div class="w-slider__item">
+                           <div class="w-slider__txt">Dry</div>
+                           <div class="w-slider__bar" id="slider3"></div>
+                           <div class="w-slider__txt">Sweet</div>
+                        </div>
+                        <div class="w-slider__item">
+                           <div class="w-slider__txt">Soft</div>
+                           <div class="w-slider__bar" id="slider4"></div>
+                           <div class="w-slider__txt">Acidic</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="home-filter__checkbox" style="display: none">
+                     <input type="checkbox" id="a1">
+                     <label for="a1">평가데이터 반영</label>
+                     <input type="checkbox" id="a2">
+                     <label for="a2">평점 반영</label>
+                  </div>
+                  <div class="home-filter__notify">
+                     Windfinder 는 와인의 맛에 대한 취향 과 사용자들의 평가,<br/>
+                     평점 데이터를 반영하여 최적의 와인을 추천 해줍니다.
+                  </div>
+                  <input class="home-filter__btn" type="submit" value="내 취향에 맞는 와인 추천받기">
+               </form>
+            </div>
+         </div>
+         <div class="home-section home-section--wine" style="display: none;">
+            <div class="home-section__header">
+               <div class="home-section__title">추천 와인</div>
+            </div>
+            <div class="home-section__content">
+               <div class="card wrapper"></div>
+            </div>
+         </div>
+      </div>
+      <div class="footer">
+         <div class="footer-copyright">© Wine Finder</div>
+      </div>
+   </div>
+
+   <!-- modal -->
+   <div id="modal-detail"></div>
+
+    <!-- modal -->
+    <div id="modal-detail"></div>
+
+
+
+
+{% endblock %}
+
