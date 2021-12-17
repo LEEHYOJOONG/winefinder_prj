@@ -144,7 +144,7 @@ $(document).ready(function() {
 
             $.ajax({
                     method: 'GET',
-                    url: "http://127.0.0.1:8000/gettopwine/",
+                    url: "http://hyojoonglee.pythonanywhere.com/gettopwine/",
                     data: "",
                     cache: false,
                     dataType: 'json',
@@ -174,7 +174,7 @@ $(document).ready(function() {
                 let sendData ="";
                 // form name
                 if (this.name == 'search') {
-                    ajaxUrl ="http://127.0.0.1:8000/getsearchwine/";
+                    ajaxUrl ="http://hyojoonglee.pythonanywhere.com/getsearchwine/";
                     let val = $('#slider1').slider("value");
                     let va2 = $('#slider2').slider("value");
                     let va3 = $('#slider3').slider("value");
@@ -182,7 +182,7 @@ $(document).ready(function() {
                      sendData = "val="+val+"&va2="+va2+"&va3="+va3+"&va4="+va4;
                      sendData += "&name="+$('#search_name').val()
                 } else {
-                    ajaxUrl ="http://127.0.0.1:8000/getwine/";
+                    ajaxUrl ="http://hyojoonglee.pythonanywhere.com/getwine/";
                     let val = $('#slider1').slider("value");
                     let va2 = $('#slider2').slider("value");
                     let va3 = $('#slider3').slider("value");

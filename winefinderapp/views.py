@@ -27,7 +27,7 @@ def get_wine_search(request):
                 "detail": data["ImageLink"],
                 "grade": data["AvgScore"],
                 "ratings": data["ScoreCount"],
-                "percent": 65,
+                "percent": 0,
                 "flag": {
                     "icon": "italy",
                     "text": "Sicily, Italy"
@@ -66,7 +66,7 @@ def get_wine_top(request):
             "detail": data["ImageLink"],
             "grade": data["AvgScore"],
             "ratings": data["ScoreCount"],
-            "percent": 65,
+            "percent": 0,
             "flag": {
                 "icon": "italy",
                 "text": "Sicily, Italy"
@@ -94,6 +94,7 @@ def get_wine(request):
     va3 = request.GET.get('va3')
     va4 = request.GET.get('va4')
     df_top_wine, df_image_lnk = WineRecommender.recommend(light=va1, smooth=va2, dry=va3, soft=va4, top=50, threshold=3)
+    print(df_top_wine)
     data = pd.merge(df_top_wine, df_image_lnk,on='WineName')
 
     json_records = data.to_json(orient ='records')
@@ -108,7 +109,7 @@ def get_wine(request):
             "detail": data["ImageLink"],
             "grade": data["AvgScore"],
             "ratings": data["ScoreCount"],
-            "percent": 65,
+            "percent": data["Similarity"],
             "flag": {
                 "icon": "italy",
                 "text": "Sicily, Italy"
